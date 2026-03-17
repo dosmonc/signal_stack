@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 88%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 88%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 88%;
+    --primary: 107 100% 54%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 183 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 44%;
+    --accent: 107 100% 54%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 107 100% 54%;
+    --radius: 0px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-chaos-void text-chaos-offwhite font-sans antialiased;
+    overflow-x: hidden;
+  }
+  
+  ::selection {
+    background: rgba(57, 255, 20, 0.3);
+    color: #E0E0E0;
+  }
+}
+
+@layer components {
+  .text-gradient-neon {
+    background: linear-gradient(135deg, #39FF14 0%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-neon {
+    border: 2px solid #39FF14;
+  }
+  
+  .border-cyan {
+    border: 2px solid #00F0FF;
+  }
+  
+  .glow-neon {
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  }
+  
+  .card-tactical {
+    @apply bg-chaos-gunmetal border-2 border-chaos-gunmetal transition-all duration-300;
+  }
+  
+  .card-tactical:hover {
+    @apply border-chaos-neon;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+  }
+  
+  .btn-neon {
+    @apply bg-transparent border-2 border-chaos-neon text-chaos-neon font-mono font-semibold px-8 py-4 transition-all duration-300 relative overflow-hidden;
+  }
+  
+  .btn-neon:hover {
+    @apply bg-chaos-neon text-chaos-black;
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+  }
+  
+  .btn-cyan {
+    @apply bg-transparent border-2 border-chaos-cyan text-chaos-cyan font-mono font-semibold px-8 py-4 transition-all duration-300;
+  }
+  
+  .btn-cyan:hover {
+    @apply bg-chaos-cyan text-chaos-black;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+  }
+  
+  .heading-massive {
+    @apply font-mono font-bold tracking-tighter leading-none;
+    font-size: clamp(2.5rem, 8vw, 7rem);
+  }
+  
+  .heading-section {
+    @apply font-mono font-bold tracking-tight;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+  }
+  
+  .text-scramble {
+    @apply font-mono;
+  }
+  
+  .grid-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 10px;
+    gap: 20px;
+  }
+  
+  .noise-bg {
+    position: relative;
+  }
+  
+  .noise-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .cursor-blink::after {
+    content: '_';
+    @apply text-chaos-neon animate-blink;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  
+  .max-width {
+    @apply max-w-[1400px] mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39FF14;
+}
