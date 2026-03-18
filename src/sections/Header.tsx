@@ -18,6 +18,7 @@ const Header = ({ scrollY }: HeaderProps) => {
     { label: 'Approach', href: '#approach' },
     { label: 'The Vault', href: '#vault' },
     { label: 'Ventures', href: '#ventures' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -50,7 +51,7 @@ const Header = ({ scrollY }: HeaderProps) => {
             >
               <Terminal className="w-6 h-6 text-chaos-neon group-hover:animate-pulse" />
               <span className="font-mono font-bold text-chaos-offwhite text-sm lg:text-base">
-                TM<span className="text-chaos-neon">.</span>DEV
+                TM<span className="text-chaos-neon">.</span>DEV<span className="text-chaos-grey">:</span> <span className="text-chaos-cyan">Signal-Stack</span>
               </span>
             </a>
 
@@ -98,6 +99,12 @@ const Header = ({ scrollY }: HeaderProps) => {
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
+          <div className="flex items-center gap-2 mb-4">
+            <Terminal className="w-8 h-8 text-chaos-neon" />
+            <span className="font-mono font-bold text-chaos-offwhite text-xl">
+              TM.DEV: <span className="text-chaos-cyan">Signal-Stack</span>
+            </span>
+          </div>
           {navItems.map((item, index) => (
             <button
               key={item.label}

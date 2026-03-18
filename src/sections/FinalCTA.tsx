@@ -84,9 +84,9 @@ const FinalCTA = () => {
             Let's jump on a 30-minute call, map out the architecture, and execute.
           </p>
 
-          {/* CTA Button */}
+          {/* CTA Buttons */}
           <div
-            className={`transition-all duration-700 delay-300 ${
+            className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-300 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -96,7 +96,18 @@ const FinalCTA = () => {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 btn-neon text-lg lg:text-xl py-5 px-10 animate-pulse-neon"
             >
-              <span>Book Your 30-Minute Call Now</span>
+              <span>Book Your 30-Minute Call</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="group inline-flex items-center gap-3 btn-cyan text-lg py-5 px-10"
+            >
+              <span>Submit Service Request</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>

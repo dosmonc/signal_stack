@@ -6,6 +6,7 @@ import Services from './sections/Services';
 import Approach from './sections/Approach';
 import Vault from './sections/Vault';
 import ParallelOps from './sections/ParallelOps';
+import Contact from './sections/Contact';
 import FinalCTA from './sections/FinalCTA';
 import Footer from './sections/Footer';
 
@@ -54,6 +55,7 @@ function App() {
         <Approach />
         <Vault />
         <ParallelOps />
+        <Contact />
         <FinalCTA />
       </main>
 
