@@ -164,12 +164,12 @@ const Services = () => {
         {
           title: 'CTA Landing Page',
           description: 'High-converting single-page with strong call-to-action.',
-          price: 'from $247'
+          price: 'from $150'
         },
         {
           title: 'Custom Logo Design',
           description: 'Unique logo designed for your brand.',
-          price: 'from $197'
+          price: 'from $50'
         },
         {
           title: 'Custom Domain Setup',
@@ -179,7 +179,7 @@ const Services = () => {
         {
           title: 'Newsletter Form Integration',
           description: 'Email capture form connected to your provider.',
-          price: 'from $67'
+          price: 'from $50'
         },
       ],
     },
@@ -191,17 +191,17 @@ const Services = () => {
         {
           title: 'Easy Website',
           description: 'Landing Page + Home, About Us, Contact Us.',
-          price: 'from $697'
+          price: 'from $150'
         },
         {
           title: 'Medium Website',
           description: 'Easy + High-converting funnels with 2 lead gen forms.',
-          price: '$500'
+          price: '$300'
         },
         {
           title: 'Harder Website',
           description: 'Medium + Blog (3 articles), moving images, custom banner, SEO footer.',
-          price: '$800'
+          price: '$450'
         },
       ],
     },
@@ -213,17 +213,17 @@ const Services = () => {
         {
           title: 'Custom Sheet Automations',
           description: 'Automated data processing, formatting, and reporting.',
-          price: 'from $197'
+          price: 'from $100'
         },
         {
           title: 'Sheets + Webapp + App Script',
           description: 'Full integration between Google Sheets, web apps, and scripts.',
-          price: 'from $497'
+          price: 'from $150'
         },
         {
           title: 'Workflow Automation',
           description: 'Connect multiple Google Workspace apps seamlessly.',
-          price: 'from $347'
+          price: 'from $150'
         },
       ],
     },
@@ -235,27 +235,27 @@ const Services = () => {
         {
           title: 'AI Agents',
           description: 'Autonomous agents for specific business tasks.',
-          price: 'From $500'
+          price: 'From $200'
         },
         {
           title: 'AI Chatbots',
           description: 'Custom-trained chatbots for your website.',
-          price: 'from $597'
+          price: 'from $100'
         },
         {
           title: 'AI Answering Service',
           description: 'AI-powered phone answering and routing.',
-          price: 'From $250/mo'
+          price: 'From $100/mo'
         },
         {
           title: 'AI Text/Email Outreach',
           description: 'Automated personalized outreach campaigns.',
-          price: 'From $175/mo'
+          price: 'From $75/mo'
         },
         {
           title: 'AI Automation Workflows',
           description: 'End-to-end AI-powered business automation.',
-          price: 'from $697'
+          price: 'from $150'
         },
       ],
     },
@@ -267,7 +267,7 @@ const Services = () => {
         {
           title: 'Brand Positioning Session',
           description: '1-hour strategy call to position your brand for growth.',
-          price: '$100'
+          price: '$75'
         },
         {
           title: 'Content Strategy Plan',
@@ -277,7 +277,7 @@ const Services = () => {
         {
           title: 'Growth Roadmap',
           description: 'Quarterly plan with actionable milestones.',
-          price: 'From $250'
+          price: 'From $200'
         },
       ],
     },
@@ -289,17 +289,17 @@ const Services = () => {
         {
           title: 'Local SEO Package',
           description: 'Google Business Profile, local citations, reviews strategy.',
-          price: 'from $397/mo'
+          price: 'from $75/mo'
         },
         {
           title: 'GEO Dominance',
           description: 'Force your brand as the definitive answer on ChatGPT, Perplexity.',
-          price: 'from $597/mo'
+          price: 'from $75/mo'
         },
         {
           title: 'Complete Search Package',
           description: 'SEO + GEO + AI Search optimization combined.',
-          price: 'from $897/mo'
+          price: 'from $75/mo'
         },
       ],
     },
@@ -311,22 +311,22 @@ const Services = () => {
         {
           title: 'Website Maintenance',
           description: 'Monthly updates, security, backups, support.',
-          price: 'from $147/mo'
+          price: 'from $100/mo'
         },
         {
           title: 'Prompt Engineering',
           description: 'Custom prompts for your business use cases.',
-          price: 'from $197'
+          price: 'from $50'
         },
         {
           title: 'API Integrations',
           description: 'Connect third-party services to your site.',
-          price: 'from $297'
+          price: 'from $100'
         },
         {
           title: 'E-commerce Setup',
           description: 'Product pages, cart, checkout, payment processing.',
-          price: 'from $997'
+          price: 'from $150'
         },
       ],
     },
